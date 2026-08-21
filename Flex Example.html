@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>flexbox layout</title>
+<style>
+{
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+font-weight: bold;
+}
+.container {
+display: flex;
+flex-direction: column;
+min-heiight: 100vh;
+}
+header {
+height: 70px;
+background-color: orange;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.main {
+display: flex;
+flex: 1;
+}
+aside:first-child {
+flex: 1;
+background-color: red;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding-top: 15px;
+}
+main {
+flex: 3;
+background-color: pink;
+padding: 40px 16px;
+}
+aside:last-child {
+flex: 1;
+background-color: voilet;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 15px;
+}
+footer {
+height:;50px;
+background-color: pink;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+HEADER
+</header>
+<div class="main">
+<aside>
+Aside 1
+</aside>
+<main>
+flex example
+</main>
+<aside>
+Aside 2
+</aside>
+</div>
+<footer>
+FOOTER
+</footer>
+</div>
+</body>
+</html>
